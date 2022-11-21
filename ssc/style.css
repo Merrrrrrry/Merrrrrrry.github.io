@@ -1,0 +1,378 @@
+/* *, *:before, *:after {box-sizing:  border-box !important;} */
+
+*margin
+.row {
+    padding-right: none;
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.article.serif {
+    font-size: x-large;}
+
+.row.header {
+    height: 140px;  
+    display: flex;
+    justify-content: space-around;
+}
+ .col img {
+    height: 140px; 
+    width: auto;
+    position: absolute;
+}
+
+.col.garmony img {
+    margin-top: 10px;
+    height: 110px; 
+    justify-content: center;
+}
+
+
+h2.title {
+
+    /* position: relative; */
+    display: flex;
+    position: relative;
+    margin-top: 90px;
+    width: 100%;
+    justify-content: center ;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.col.search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    color: #222;
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: 700;
+}
+
+div img.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonG {
+    width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.buttonG .btn{
+width: 17%;
+/* border:3px solid black; */
+}
+
+.btnfirst {
+font-size: 1.5rem;
+font-style: italic;
+font-weight: 600;
+}
+
+/* .btnfirst {
+    color: white;
+font-size: 1.5rem;
+font-style: italic;
+font-weight: 600;
+}
+.btnfirst.yellow {
+    color: black;
+
+} */
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+}
+
+.green {
+    background-color: #1BB125;
+}
+.blue {
+    background-color: #00B7FA;
+}
+.yellow {
+    background-color: #FFE606;
+}
+.magenta {
+    background-color: #FF0EC6;
+}
+.purple {
+    background-color: #752BD8;
+}
+
+.btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+.row /* .article  */{
+    display: flex;
+    justify-content: center;
+}
+
+h2.actual{
+font-style: normal;
+color: white;
+font-weight: bold;
+
+}
+
+p.aditional-white{
+color: white;
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.6rem;
+}
+
+p.aditional-white:hover{
+color: #222; 
+}
+
+
+button.serif {
+   
+    border-radius: 0%;
+}
+
+/* .hstack{
+   padding-top: 1em;
+}
+ */
+
+ .hstack .col-1 {
+    width: 30%; 
+    height: 19rem;
+    align-items: none;
+    padding-top: 2em;
+}
+
+@media screen and (max-width: 420px) {
+    .hstack {
+      flex-direction: column;
+      width: 100%;
+    }
+    .hstack .col-1 {
+    width: 100%;
+    height: 15rem;
+  } 
+  } 
+
+
+.peret-parent {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+background-color: #E6E6E6;
+
+}
+
+.gray {
+    width: 100%;
+    font-display: center;
+    background-color: #E6E6E6;
+    text-align: center;
+}
+.gray h1 {
+    font: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.card-body-peret {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    
+}
+.card-body-peret h5 {
+    font: 2em;
+    font-weight: bold;
+}
+.card-body-peret .Flex-end p {
+    font: 1em 'Times New Roman', Times, serif;   
+}
+
+.card.peret {
+    width: 30%;
+}
+
+@media screen and (max-width: 420px) {
+
+    .buttonG {
+        flex-wrap: wrap;
+    }
+
+    .buttonG {
+        justify-content: center;
+        gap: 5%;
+    }
+    .buttonG .btn {
+            width: 43%;
+        /* border:3px solid black; */
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+    }
+    .btn.purple {
+            color: #E6E6E6;
+    }
+    .card.peret {
+            width: 47%;
+    }
+    .peret-parent {
+            gap: 1rem;
+    }
+
+    .row-green {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+        .col-7,.contact-card  {
+        width: 100%; } 
+
+        .col.garmony img {
+            height: 60px; 
+            width: auto;
+        }
+        .col img {
+            height: 100px; 
+            margin: 20px 0 0 20px;
+            position: absolute;
+        }
+        .col.garmony{
+            width: 100px;
+        }
+        h2.title{
+        display: none;
+        }
+     
+        .col.search {
+            margin-top: 60px;
+
+                display: flex;
+                justify-content: none;
+                align-items: none;
+                width: 50px;
+               
+        }
+/*         .form-control.me-2{
+            width: 100px; !!!!!! if yo will put a "width" directly to the .form control 
+            (not his parent, not somewhere else!) you will able to change it.
+        } */
+        .form-control.me-2{
+            width: 180px;
+        }
+        .btn.btn-success{
+            width: auto;
+            margin-right: 18px;
+
+        }
+
+        div.green {
+            padding: 0 0 0 20px;
+        }
+        .col.col-8 h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+        }
+        .article.serif {
+            font-size: 1.8rem;}
+    }
+
+/* 
+    @media screen and (min-width: 420px) {
+        .col.search
+    }
+ */
+
+
+
+
+
+
+
+  
+  html{font-size: 16px;}
+  
+  @media screen and (max-width: 420px) {
+    html{font-size: 14px; }
+  }
+ 
+  
+
+h1.t-yellow {
+    color: #FFE606;
+    font-size: 3rem;
+}
+
+
+.text {
+/* font-family: 'Times New Roman', Times, serif;  */
+font-size: 1.4rem;
+color: white;
+}
+/* .row {
+ -moz-column-width: 18em;
+ -webkit-column-width: 18em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap:1em; 
+  
+}
+
+.item {
+ display: inline-block;
+ padding:  .25rem;
+ width:  100%; 
+}
+
+.well {
+ position:relative;
+ display: block;
+} */
+
+
+/* Fix and hacks */
+    .row.fix_width {margin-left: 0; margin-right: 0;}
+    .row>* {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .form-control {
+        font-size: 1.35rem;
+        padding: .75rem 1rem;
+    }
+
+    .btn.yellow.btn-lg.Find {
+        font-size: 1.35rem;
+        font-weight: 700;
+        border-radius: 0;
+    }
+    .gray .btn.blue.btn-lg {
+        font-size: 1.35rem;
+        font-weight: 700;
+
+    }
+    .contact-card button.btn.yellow {
+        width: 100%;
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: #6c757d;
+    }
+    h1.t-yellow.plus {
+        padding-left: .9rem;
+    }
